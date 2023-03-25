@@ -39,7 +39,7 @@ IndexController {
   justify-content:space-around;
   }
 
-.ceva{
+.ceva{ /*pozitiv*/
   position: relative;
   height: auto;
   display: block;
@@ -47,13 +47,35 @@ IndexController {
   justify-content: center;
   text-align: center;
   top: 5em;
-  left: -171%;
+  left: -128%;
   right: 10%;
+}
 
+.ceva1{ /*negativ*/
+  position: relative;
+  height: auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 5em;
+  left: -128%;
+  right: 10%;
+}
+
+.ceva2{  /*echilibrat*/
+  position: relative;
+  height: auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 5em;
+  left: -120%;
+  right: 10%;
 }
 
 p{
-  display: inline;
   position: relative;top: 50px; left: 0px;
 }
 

@@ -73,14 +73,14 @@ function IndexState({ index0, index1 }) {
   if (index1  + index0 >0 ) {
     return (
       <div style={{color:'green'}}>
-        <p className='ceva'>Index Pozitiv!</p>
+        <p className='ceva'>Spatiu complet pozitiv!</p>
       </div>
     )
   }
   else if (index1 + index0 < 0) {
     return (
       <div style={{color:'red'}}>
-        <p className='ceva'>Index negativ!</p>
+        <p className='ceva1'>Spatiu complet negativ!</p>
       </div>
     )
   }
@@ -88,7 +88,7 @@ function IndexState({ index0, index1 }) {
   else if ((index1 == 0 && index0 == 0) || (index0 != index1)) {
     return (
       <div style={{color:'white'}}>
-        <p className='ceva'>Index echilibrat</p>
+        <p className='ceva2'>Spatiu complet echilibrat</p>
       </div>
     )
   }
