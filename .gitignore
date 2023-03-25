@@ -1,0 +1,20 @@
+# Ignore compiled output
+/dist
+
+# Ignore dependencies
+/node_modules
+
+# Ignore log files
+*.log
+
+# Ignore editor files
+.vscode/
+
+# Ignore build files
+/build
+
+# Ignore CSS, JavaScript, and HTML files
+*.css
+*.js
+*.jsx
+*.html
