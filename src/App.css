@@ -1,0 +1,74 @@
+.Aplicatie {
+  background-color: #282c34;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  color: white;
+}
+
+index1{
+  color:white ;
+  display: block;
+}
+
+IndexController {
+  display: flex;
+  flex-direction: inline-block;
+}
+
+.button0, .button1 { 
+  width: 48px;
+  height: 32px;
+  border-radius: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 48px;
+}
+
+.button4,.button2, .button3 {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 48px;
+  height: 32px;
+  justify-content:space-around;
+  }
+
+.ceva{
+  position: relative;
+  height: auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 5em;
+  left: -171%;
+  right: 10%;
+
+}
+
+p{
+  display: inline;
+  position: relative;top: 50px; left: 0px;
+}
+
+.p1{
+  display: inline;
+  top: -4.5em;
+  left: -6.4em;
+}
+.p2{
+  display: inline;
+  top: -4.5em;
+  left: -5.7em;
+}
+.p3{
+  display: inline;
+  top: -3em;
+  left: 3em;
+}
