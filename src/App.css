@@ -1,103 +1,50 @@
 .Aplicatie {
   background-color: #282c34;
   min-height: 100vh;
-  align-items: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   color: white;
 }
 
-index1{
-  color:white ;
-  display: block;
+.btn-up, .btn-down { 
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+
+/*   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
 }
 
-IndexController {
+.btn-left,.btn-reset, .btn-right {
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  
+ /*  display: flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center; */
+}
+
+.text-echilibrat,.text-negativ,.text-pozitiv{  
+  flex-direction: column;
+  height: auto;
   display: flex;
-  flex-direction: inline-block;
-}
-
-.button0, .button1 { 
-  width: 48px;
-  height: 32px;
-  border-radius: 10px;
-  display: grid;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  margin-right: 10px;
-  margin-left: 48px;
-  margin-top: 5px;
-  margin-bottom: 5px;
- border-width: 4px ;
 }
 
-.button4,.button2, .button3 {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  width: 48px;
-  height: 32px;
-  justify-content:space-around;
-  border-width: 4px ;
-  }
-
-.ceva{ /*pozitiv*/
-  position: relative;
-  height: auto;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  top: 5em;
-  left: -128%;
-  right: 10%;
-
-}
-
-.ceva1{ /*negativ*/
-  position: relative;
-  height: auto;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  top: 5em;
-  left: -128%;
-  right: 10%;
-}
-
-.ceva2{  /*echilibrat*/
-  position: relative;
-  height: auto;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  top: 5em;
-  left: -156%;
-  right: 0%;
-}
-
-p{
-  position: relative;top: 50px; left: 0px;
-}
-
-.p1{
+.X-IndexDisplay, .Y-IndexDisplay{
   display: inline;
-  top: -4.5em;
-  left: -6.4em;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.p2{
+.top-text{
   display: inline;
-  top: -4.5em;
-  left: -5.7em;
-}
-
-.p3{
-  display: inline;
-  top: -3em;
-  left: 3em;
+  justify-content: flex-start;
 }
