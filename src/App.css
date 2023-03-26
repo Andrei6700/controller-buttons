@@ -27,6 +27,9 @@ IndexController {
   align-items: center;
   margin-right: 10px;
   margin-left: 48px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+ border-width: 4px ;
 }
 
 .button4,.button2, .button3 {
@@ -37,6 +40,7 @@ IndexController {
   width: 48px;
   height: 32px;
   justify-content:space-around;
+  border-width: 4px ;
   }
 
 .ceva{ /*pozitiv*/
@@ -49,6 +53,7 @@ IndexController {
   top: 5em;
   left: -128%;
   right: 10%;
+
 }
 
 .ceva1{ /*negativ*/
@@ -71,8 +76,8 @@ IndexController {
   justify-content: center;
   text-align: center;
   top: 5em;
-  left: -120%;
-  right: 10%;
+  left: -156%;
+  right: 0%;
 }
 
 p{
@@ -84,11 +89,13 @@ p{
   top: -4.5em;
   left: -6.4em;
 }
+
 .p2{
   display: inline;
   top: -4.5em;
   left: -5.7em;
 }
+
 .p3{
   display: inline;
   top: -3em;
