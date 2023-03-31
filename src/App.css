@@ -11,15 +11,11 @@
 
 .btn-down { 
   border-radius: 10px;
-  width: auto;
-  height: auto;
 }
 
 .btn-up{
   display: flex;
   border-radius: 10px;
-  width: auto;
-  height: auto;
   justify-content:center ;
   align-self: center;
   flex-direction: row ;
@@ -28,8 +24,6 @@
 
 .btn-left,.btn-reset, .btn-right {
   border-radius: 10px;
-  width: auto;
-  height: auto;
   align-items: center; 
   flex-direction: row;
 }
@@ -39,7 +33,6 @@
   height: auto;
   display: flex;
   justify-content: flex-end;
-
 }
 
 .XY-IndexDisplay{

@@ -1,38 +1,28 @@
 import './App.css';
 import { useState } from 'react';
 
+function getCoordonatesColor(index1, index0) {
+  if (index1 > 0 || index0 > 0) {
+    return 'green';
+  }
+  else if (index1 < 0 || index0 < 0) {
+    return 'red';
+  }
+  else if (index1 == 0 || index0 == 0) {
+    return 'white';
+  }
+}
+
 function IndexDisplay({index1,index0}){
-  if (index1 >0 || index0 >0 ) {
     return (
       <div>
-      <p className="XY-IndexDisplay"  style={{ color: 'green' }}>X: </p>
-      <p className="XY-IndexDisplay"  style={{ color: 'white' }}>{index1};</p>
-      <p className="XY-IndexDisplay"  style={{ color: 'green' }}>Y:</p>
-      <p className="XY-IndexDisplay"  style={{ color: 'white' }}>{index0}</p>
+      <p className="XY-IndexDisplay"  style={{ color: getCoordonatesColor(index1) }}>X</p>
+      <p className="XY-IndexDisplay">:{index1};</p>
+      <p className="XY-IndexDisplay"  style={{ color: getCoordonatesColor(index0) }}>Y</p>
+      <p className="XY-IndexDisplay">:{index0}</p>
     </div>
     )
   }
-  else if (index1 == 0 || index0 == 0){
-    return(
-      <div>
-      <p className="XY-IndexDisplay"  style={{ color: 'white' }}>X: </p>
-      <p className="XY-IndexDisplay"  style={{ color: 'white' }}>{index1};</p>
-      <p className="XY-IndexDisplay"  style={{ color: 'white' }}>Y:</p>
-      <p className="XY-IndexDisplay"  style={{ color: 'white' }}>{index0}</p>
-      </div>    
-      )
-  }
-  else if (index1 < 0 || index0  <0){
-    return(
-      <div>
-      <p className="XY-IndexDisplay"  style={{ color: 'red'   }}>X: </p>
-      <p className="XY-IndexDisplay"  style={{ color: 'white' }}>{index1};</p>
-      <p className="XY-IndexDisplay"  style={{ color: 'red'   }}>Y:</p>
-      <p className="XY-IndexDisplay"  style={{ color: 'white' }}>{index0} </p>
-      </div>    
-      )
-  }
-}
 
 function CombinedIndexs({ setIndex0, index0, setIndex1, index1 }) {
   return (
@@ -61,7 +51,6 @@ function IndexState({ index0, index1 }) {
         <p className='text-negativ'>Spatiu complet negativ!</p>
     )
   }
-
   else {
     return (
         <p className='text-echilibrat'>Spatiul de intre!</p>
