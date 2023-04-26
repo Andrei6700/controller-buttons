@@ -23,9 +23,17 @@
 }
 
 .btn-left,.btn-reset, .btn-right {
+  color: black;
+  padding: 10px 10px 0;
   border-radius: 10px;
   align-items: center; 
   flex-direction: row;
+}
+
+.btn-left,.btn-reset, .btn-right,.btn-up,.btn-down{
+  color: black;
+   padding: 10px 10px 0;
+
 }
 
 .text-echilibrat,.text-negativ,.text-pozitiv{  

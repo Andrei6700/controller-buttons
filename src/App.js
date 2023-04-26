@@ -24,18 +24,20 @@ function IndexDisplay({index1,index0}){
     )
   }
 
+
+
 function CombinedIndexs({ setIndex0, index0, setIndex1, index1 }) {
   return (
     <><div>
-        <button className="btn-up" style={{ color: 'black', padding: '10px 10px 0' }} onClick={() => setIndex0(index0 + 1)} disabled={ index0 > 16 }>︿</button>
+        <button className="btn-up" onClick={() => setIndex0(index0 + 1)} disabled={ index0 > 16 }>︿</button>
     </div><><div>
       <div>
-        <button className="btn-left" style={{ color: 'black', padding: '10px 10px 0' }} onClick={() => setIndex1(index1 - 1)} disabled={ index1 < -16 }>﹤</button>
-        <button className="btn-reset" style={{ color: 'black', padding: '10px 10px 0' }} onClick={() => { setIndex1(index1 = 0); setIndex0( index0 = 0 );}}>R</button>
-        <button className="btn-right" style={{ color: 'black', padding: '10px 10px 0' }} onClick={() => setIndex1(index1 + 1)} disabled={index1 > 16 }>﹥</button>
+        <button className="btn-left" onClick={() => setIndex1(index1 - 1)} disabled={ index1 < -16 }>﹤</button>
+        <button className="btn-reset" onClick={() => { setIndex1(index1 = 0); setIndex0( index0 = 0 );}}>R</button>
+        <button className="btn-right" onClick={() => setIndex1(index1 + 1)} disabled={index1 > 16 }>﹥</button>
       </div>
     </div><div>
-        <button className="btn-down" style={{ color: 'black', padding: '10px 10px 0' }} onClick={() => setIndex0(index0 - 1)} disabled={index0 < -16 }>﹀</button>
+        <button className="btn-down"  onClick={() => setIndex0(index0 - 1)} disabled={index0 < -16 }>﹀</button>
         </div></></>
   )
 }
